@@ -47,4 +47,6 @@ This project demonstrates a frontend setup using modern web development tools an
 - **GitHub Pages** for seamless deployment of static sites.
 - Automated deployment via the `gh-pages` package.
 
+---
+
 > This repository is intended for technical demonstration purposes only.
