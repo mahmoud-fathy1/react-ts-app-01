@@ -1,0 +1,154 @@
+.top {
+    margin-top: 150px !important;
+    /* height: 310px; */
+}
+
+.logo-container {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #215783;
+    border-radius: 1000px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-logo-container {
+    width: 180px;
+    height: 180px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 1000px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 100%;
+    /* height: 100%; */
+    margin: auto;
+}
+
+.project-header {
+    background: url(/assets/websites/website-pages.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 30px;
+    background-size: contain;
+    font-size: 28px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link {
+    background-color: #215783;
+}
+
+.project-link a {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.project-image-container {
+    height: 356px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.367);
+    /* position: relative; */
+}
+.project-image-container img {
+    width: 100%; /* Make the image width 100% of the container */
+    height: 100%; /* Make the image height 100% of the container */
+    object-fit: cover;
+    object-position: center;
+}
+
+.ReactModal__Overlay {
+    z-index: 999;
+    padding: 0 !important;
+    background-color: 000 !important;
+    border: 0 !important;
+}
+
+.slideshow-modal {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 100vh; */
+}
+
+.project-slider {
+    overflow: hidden;
+    /* height: 100vh; */
+    height: max-content;
+    /* width: 100%; */
+}
+
+.project-slider .slick-slider {
+    height: max-content;
+    /* padding: 0 !important;
+    margin: 0 !important; */
+}
+
+.project-slider .slick-slider img {
+    width: 50px !important;
+
+    /* height: 100%; */
+}
+.project-slider img {
+    max-width: 100% !important;
+    margin: auto;
+    height: 100vh !important;
+    object-fit: cover;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.project-slider img {
+    /* max-width: 100%; */
+    margin: auto;
+    object-fit: cover;
+}
+
+.prev-arrow {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    width: 30px;
+    z-index: 99;
+}
+.next-arrow {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 30px;
+    z-index: 99;
+}
+
+.website-details-next {
+    width: 17px;
+}
+.website-details-prev {
+    width: 17px;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .website-btn {
+        font-size: 12px !important;
+        color: white !important;
+    }
+}

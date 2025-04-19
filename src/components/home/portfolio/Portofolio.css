@@ -1,0 +1,150 @@
+.borderOfService {
+    border: 2px;
+    border-style: solid;
+    border-color: #148cef;
+}
+.portfolio-title {
+    z-index: 2;
+}
+.portfolio-section-container {
+    height: 240px;
+    /* overflow: hidden; */
+}
+.portfolio-section-img-container {
+    max-height: 205px;
+}
+.serviceName {
+    font-size: 20px;
+    font-weight: 600;
+    color: #12367c;
+    text-align: center;
+    margin-top: 20px;
+}
+.borderr {
+    border: 1px solid #d2d5da;
+}
+
+.textService {
+    color: #05579b;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+.handelWidth {
+    width: 60%;
+}
+.portfolio-section-button {
+    background-color: white;
+    color: #05579b;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    text-decoration: underline;
+    padding: 5px;
+}
+.portfolio-section-button span {
+    padding: 0 5px;
+}
+.portfolio-section-button img {
+    width: 30px;
+    height: 30px;
+}
+@media screen and (min-width: 1000px) {
+    .handelWidth {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .arrow1 {
+        display: none;
+    }
+    .arrow2 {
+        display: none;
+    }
+    .textService {
+        font-size: 22px;
+    }
+}
+.arrow1 {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    /* text-align: right; */
+    width: 200px !important;
+    height: 200px !important;
+    overflow: hidden;
+    animation: translateXYAnimation 4s infinite;
+}
+.arrow1 img {
+    width: 100%;
+}
+.arrow2 {
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    /* text-align: left; */
+    width: 200px !important;
+    height: 200px !important;
+    animation: translateXXYYAnimation 4s infinite;
+    overflow: hidden;
+}
+.arrow2 img {
+    width: 100%;
+}
+
+.port-img {
+    max-height: 65px;
+}
+
+@keyframes translateXYAnimation {
+    0% {
+        transform: translate(0%, -20%);
+    }
+    50% {
+        transform: translate(-70%, 10%);
+    }
+    100% {
+        transform: translate(0%, -20%);
+    }
+}
+@keyframes translateXXYYAnimation {
+    0% {
+        transform: translate(0%, -20%);
+    }
+    50% {
+        transform: translate(70%, 10%);
+    }
+    100% {
+        transform: translate(0%, -20%);
+    }
+}
+
+/* Apply the animation to an element */
+.element {
+    animation: translateAnimation 2s ease infinite;
+}
+
+@media only screen and (max-width: 992px) {
+    @keyframes translateXYAnimation {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        50% {
+            transform: translate(-20%, 10%);
+        }
+        100% {
+            transform: translate(0%, 0%);
+        }
+    }
+    @keyframes translateXXYYAnimation {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        50% {
+            transform: translate(20%, 10%);
+        }
+        100% {
+            transform: translate(0%, 0%);
+        }
+    }
+}
